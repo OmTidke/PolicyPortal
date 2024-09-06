@@ -1,0 +1,63 @@
+.home {
+    background-image: url('../img/homepage.jpg'); /* Replace with the actual path of your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack the text and the hero section vertically */
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 80px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+.hero {
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    width: 80%; /* Adjusts the width to make it responsive */
+    text-align: center; /* Centers the text inside the hero section */
+}
+
+.dark-navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.space-around {
+    font-size: large;
+    font-weight: 500;
+    width: 60%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand-name {
+    color: green;
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.login-btn {
+    font-size: 18px;
+    background-color: green;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}

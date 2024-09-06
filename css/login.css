@@ -1,0 +1,57 @@
+/* Full-page background with blur */
+.login-body {
+	position: relative;
+	min-height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+	font-family: 'Georgia', serif;
+	overflow: hidden;
+}
+
+.login-body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/homepage.jpg'); /* Update with your image path */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(2px); /* Blur effect */
+	z-index: -1;
+	opacity: 0.8; /* Adjust opacity for darker effect */
+}
+
+/* Translucent background for the login section */
+.login-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	z-index: 1; /* Make sure this is on top of the blurred background */
+}
+
+/* Login card styling */
+.login-card {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+	border-radius: 25px;
+	padding: 2rem;
+	width: 350px;
+	z-index: 1; /* Keep the card above the background */
+}
+
+/* Customize form input fields */
+.loginForm .form-control {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.login-button{
+    width: 100px;
+}
